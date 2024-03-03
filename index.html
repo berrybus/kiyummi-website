@@ -15,7 +15,7 @@
 
 <body class="w-full">
   <div class="navbar bg-base-300 drop-shadow-md w-full sticky top-0 z-50">
-    <div class="container max-w-screen-xl">
+    <div class="container max-w-screen-xl px-2">
       <div class="w-full flex flex-row justify-between items-center">
         <a href="index.html"><img class="w-32 sm:w-36 max-w-full" src="kiyummi_logo.png" /></a>
         <div class="flex flex-row gap-2 items-center content-center justify-items-stretch">
@@ -30,11 +30,12 @@
               class="text-2xl fa-brands fa-discord hover:text-accent"></i></a>
           <a href="mailto:kiyummigames@gmail.com" class="sm:block hidden"><i
               class="text-2xl fa-solid fa-envelope hover:text-accent"></i></a>
-          <div class="w-8" class="sm:block hidden"></div>
-          <div class="dropdown dropdown-end sm:hidden block">
-            <div tabindex="0" role="button" class="btn btn-outline px-1"><i class="fa-solid fa-caret-down"></i>Links
-            </div>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-36">
+          <div class="w-8 sm:block hidden"></div>
+          <div class="flex flex-row gap-4 items-center">
+          <details class="dropdown dropdown-end sm:hidden block">
+            <summary class="btn btn-outline px-2"><i class="fa-solid fa-caret-down"></i>Links
+            </summary>
+            <ul id="dropdown-content" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-36">
               <li><a href="https://mastodon.gamedev.place/@kiyummi"><i class="text-xl fa-brands fa-mastodon"></i>
                   Mastodon</a></li>
               <li><a href="https://twitter.com/dev_witch"><i class="text-xl fa-brands fa-twitter"></i>
@@ -46,8 +47,9 @@
               <li><a href="mailto:kiyummigames@gmail.com"><i class="text-xl fa-solid fa-envelope"></i>
                   Email</a></li>
             </ul>
+          </details>
+          <button data-theme-toggle class="text-2xl hover:text-accent flex w-6" title="Toggle theme"></button>
           </div>
-          <button data-theme-toggle class="text-2xl hover:text-accent flex" title="Toggle theme"></button>
         </div>
       </div>
     </div>

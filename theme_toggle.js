@@ -58,3 +58,13 @@ buttons.forEach((button) => {
 });
 updateColorTheme();
 
+
+window.onclick = function(event) {
+    if (!event.target.closest('.dropdown')) {
+      document.querySelector(".dropdown").removeAttribute("open");
+    }
+}
+
+document.querySelector(".dropdown-content").addEventListener('click',function(event){
+    event.stopPropagation();
+});
