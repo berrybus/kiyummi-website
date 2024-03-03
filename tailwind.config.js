@@ -8,6 +8,9 @@ module.exports = {
     },
     extend: {},
   },
+    future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [
     require("@fortawesome/fontawesome-free"),
     require("@tailwindcss/typography"),
