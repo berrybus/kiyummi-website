@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Official website for Kiyummi Games formerly AGM Studios, home of Fairyside, Gun Witch and visual novels focusing on anime aesthetics" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="fontawesome-free/css/all.css" />
+  <title>Kiyummi Games</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="w-full">
+  <div class="navbar bg-base-300 drop-shadow-md w-full sticky top-0 z-50">
+    <div class="container max-w-screen-xl px-2">
+      <div class="w-full flex flex-row justify-between items-center">
+        <a href="index.html"><img class="w-32 sm:w-36 max-w-full" src="kiyummi_logo.png" /></a>
+        <div class="flex flex-row gap-2 items-center content-center justify-items-stretch">
+
+          <a href="https://mastodon.gamedev.place/@kiyummi" class="sm:block hidden"><i
+              class="text-2xl fa-brands fa-mastodon hover:text-accent"></i></a>
+          <a href="https://twitter.com/dev_witch" class="sm:block hidden"><i
+              class="text-2xl fa-brands fa-twitter hover:text-accent"></i></a>
+          <a href="https://ko-fi.com/kiyummi" class="sm:block hidden"><i
+              class="text-2xl fa-solid fa-mug-saucer hover:text-accent"></i></a>
+          <a href="https://discord.gg/ke4E8Wgzpw" class="sm:block hidden"><i
+              class="text-2xl fa-brands fa-discord hover:text-accent"></i></a>
+          <a href="mailto:kiyummigames@gmail.com" class="sm:block hidden"><i
+              class="text-2xl fa-solid fa-envelope hover:text-accent"></i></a>
+          <div class="w-8 sm:block hidden"></div>
+          <div class="flex flex-row gap-4 items-center">
+            <details class="dropdown dropdown-end sm:hidden block">
+              <summary class="btn btn-outline px-2"><i class="fa-solid fa-caret-down"></i>Links
+              </summary>
+              <ul id="dropdown-content" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-36">
+                <li><a href="https://mastodon.gamedev.place/@kiyummi"><i class="text-xl fa-brands fa-mastodon"></i>
+                    Mastodon</a></li>
+                <li><a href="https://twitter.com/dev_witch"><i class="text-xl fa-brands fa-twitter"></i>
+                    Twitter</a></li>
+                <li><a href="https://ko-fi.com/kiyummi"><i class="text-xl fa-solid fa-mug-saucer"></i>
+                    Ko-fi</a></li>
+                <li><a href="https://discord.gg/ke4E8Wgzpw"><i class="text-xl fa-brands fa-discord"></i>
+                    Discord</a></li>
+                <li><a href="mailto:kiyummigames@gmail.com"><i class="text-xl fa-solid fa-envelope"></i>
+                    Email</a></li>
+              </ul>
+            </details>
+            <button data-theme-toggle class="text-2xl hover:text-accent flex w-6" title="Toggle theme"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero pt-8">
+    <div class="hero-content text-center">
+      <div class="max-w-lg">
+        <h1 class="text-5xl font-bold dark:text-orange-300 text-orange-800">Our Games</h1>
+        <p class="pt-4 text-lg">
+          Kiyummi Games is a small studio dedicated to creating video games with
+          addictive gameplay and immersive stories
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="container max-w-screen-xl">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div class="card bg-base-100 shadow-lg glass">
+        <a href="https://store.steampowered.com/app/2174600/Fairyside/">
+          <figure class="rounded-t">
+            <img class="aspect-[4/3] object-cover w-full object-center" src="fairyside.png"
+              alt="Promotional image for Fairyside" />
+          </figure>
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">Fairyside</h2>
+          <div class="badge badge-secondary">Rogue-like shooter</div>
+          <p>
+            A dark fantasy rogue-like shoot-em-up with bullet hell and RPG
+            elements featuring cute pixel art, visual novel interludes, and
+            story-driven gameplay. Join Shirley in her journey to learn magic
+            and survive Redwood Academy!
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <a href="https://store.steampowered.com/app/2174600/Fairyside/"><i class="fa-brands fa-steam"></i>
+                Steam</a>
+            </button>
+            <button class="btn btn-primary">
+              <a href="https://kiyummi.itch.io/fairyside"><i class="fa-brands fa-itch-io"></i> Itch.io</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl glass">
+        <a href="https://store.steampowered.com/app/1502790/Gun_Witch/">
+          <figure class="rounded-t">
+            <img class="aspect-[4/3] object-cover w-full" src="gunwitch.png" alt="Promotional image for Gun Witch" />
+          </figure>
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">Gun Witch</h2>
+          <div class="badge badge-secondary">Platformer</div>
+          <p>
+            Help Beretta become the best witch ever in this 2D action
+            platformer shoot 'em up! She's going on an adventure to beat up
+            monsters, talk to cute NPCs, and discover the dark history of
+            Luninsula all while making lifelong friends.
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <a href="https://store.steampowered.com/app/1502790/Gun_Witch/"><i class="fa-brands fa-steam"></i>
+                Steam</a>
+            </button>
+            <button class="btn btn-primary">
+              <a href="https://kiyummi.itch.io/gun-witch"><i class="fa-brands fa-itch-io"></i> Itch.io</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl glass">
+        <a href="https://kiyummi.itch.io/the-strange-case-of-sophias-daughter">
+          <figure class="rounded-t">
+            <img class="aspect-[4/3] object-cover object-bottom" src="mabel.png"
+              alt="A boy holding a girl's hand with a title over it" />
+          </figure>
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">The Strange Case Of Sophia's Daughter</h2>
+          <div class="badge badge-secondary">Visual novel</div>
+          <p>
+            Tony was living a perfectly lovely high school life until his
+            childhood friend comes back to haunt him -- literally. The dead
+            girl has seemingly put a curse on him, making Tony's life a living
+            nightmare. How will he manage his guilt, misfortune, and
+            blossoming feelings for his once-forgotten friend?
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <a href="https://kiyummi.itch.io/the-strange-case-of-sophias-daughter"><i
+                  class="fa-brands fa-itch-io"></i> Itch.io</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl glass">
+        <a href="https://kiyummi.itch.io/the-knight-of-the-golden-rose">
+          <figure class="rounded-t">
+            <img class="aspect-[4/3] object-cover object-top w-full" src="rose.png" alt="A blond girl sleeping" />
+          </figure>
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">The Knight of the Golden Rose</h2>
+          <div class="badge badge-secondary">Visual novel</div>
+          <p>
+            In medieval England, Cecilia dreams of becoming a sorcerer and living out the stories of knights and dragons
+            that she has only read about in books. When her childhood friend, Anselm, reveals that he is related to the
+            king of England, the two embark on a journey across the country to discover the realm's lost magic and grow
+            closer along the way.
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <a href="https://kiyummi.itch.io/the-knight-of-the-golden-rose"><i class="fa-brands fa-itch-io"></i>
+                Itch.io</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider pt-8"></div>
+
+  <div class="hero">
+    <div class="hero-content text-center">
+      <div class="max-w-lg">
+        <h1 class="text-4xl font-bold dark:text-orange-300 text-orange-800">Bonus Content</h1>
+        <p class="pt-4 text-lg">
+          Other cool things we've released that you should check out
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="container max-w-screen-xl flex flex-col gap-4">
+
+    <div class="card dark:bg-gray-700 bg-neutral-50 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title text-3xl">Gun Witch Wallpapers</h2>
+        <div class="badge badge-secondary">December 27, 2023</div>
+        <p class="text-md">
+          Happy holidays! To celebrate the 3rd anniversary of Gun Witch and the founding of Kiyummi Games, here are Gun
+          Witch wallpapers! Both desktop and phone versions are included.
+        </p>
+        <div class="flex md:flex-nowrap flex-wrap flex-row gap-2">
+          <figure>
+            <img src="gun_witch_wallpaper.jpg"
+              alt="A group of 3 girls in the hills below a bright blue sky, landscape" />
+          </figure>
+          <figure>
+            <img src="gun_witch_phone_wallpaper.png"
+              alt="A group of 3 girls in the hills below a bright blue sky, portrait" />
+          </figure>
+        </div>
+        <div class="card-actions justify-start">
+          <a href="gun_witch_wallpaper.jpg" download> <button class="btn btn-primary"><i
+                class="fa-solid fa-download"></i> Desktop wallpaper</button></a>
+          <a href="gun_witch_phone_wallpaper.png" download><button class="btn btn-primary"><i
+                class="fa-solid fa-download"></i> Phone wallpaper</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="card md:card-side dark:bg-gray-700 bg-neutral-50 shadow-xl">
+      <figure class="md:max-w-80"><img src="artbook_cover.png" alt="Shirley as a young adult sticking her tongue out" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-3xl">Fairyside Artbook</h2>
+        <div class="badge badge-secondary">November 5, 2022</div>
+        <p>We've released an artbook for our newest game, Fairyside, featuring concept art, fanart, and sketches of all
+          your favorite characters. We were originally planning to sell the artbook as DLC but decided to release it for
+          free instead so that everyone can enjoy it!</p>
+        <div class="card-actions justify-start">
+          <a href="artbook.pdf" download><button class="btn btn-primary"><i class="fa-solid fa-download"></i>
+              Download PDF</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider pt-8"></div>
+  <div class="hero">
+    <div class="hero-content text-center">
+      <div class="max-w-screen-2xl">
+        <h1 class="text-4xl font-bold dark:text-orange-300 text-orange-800">Connect with us</h1>
+        <p class="pt-4 text-lg">
+          For the latest news and development updates, please follow us over at <a class="link"
+            href="https://mastodon.gamedev.place/@kiyummi">
+            Mastodon</a>!
+        </p>
+        <p class="pt-4 text-lg">
+          Please <a class="link" href="mailto:kiyummigames@gmail.com">email</a> us if you have any questions, concerns,
+          or want to
+          join our team!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="mb-8"></div>
+  <footer class="footer py-6 bg-neutral">
+    <div class="container max-w-screen-lg mx-auto flex flex-row flex-wrap justify-center">
+      <button class="btn btn-outline btn-info btn-sm">
+        <a href="https://mastodon.gamedev.place/@kiyummi"><i class="text-md fa-brands fa-mastodon"></i>
+          Mastodon</a></button>
+      <button class="btn btn-outline btn-info btn-sm"><a href="https://twitter.com/dev_witch"><i
+            class="text-md fa-brands fa-twitter"></i> Twitter</a></button>
+      <button class="btn btn-outline btn-info btn-sm"><a href="https://ko-fi.com/kiyummi"><i
+            class="text-md fa-solid fa-mug-saucer"></i> Ko-fi</a></button>
+      <button class="btn btn-outline btn-info btn-sm"><a href="https://discord.com/invite/ke4E8Wgzpw"><i
+            class="text-md fa-brands fa-discord"></i> Discord</a></button>
+      <button class="btn btn-outline btn-info btn-sm"><a href="mailto:kiyummigames@gmail.com"><i
+            class="text-md fa-solid fa-envelope"></i> Email</a></button>
+    </div>
+  </footer>
+  <script src="theme_toggle.js"></script>
+</body>
+
+</html>
