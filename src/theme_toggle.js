@@ -59,12 +59,12 @@ buttons.forEach((button) => {
 updateColorTheme();
 
 
-window.onclick = function(event) {
+document.addEventListener("click", (event) => {
     if (!event.target.closest('.dropdown')) {
       document.querySelector(".dropdown").removeAttribute("open");
     }
-}
+});
 
-document.querySelector(".dropdown-content").addEventListener('click',function(event){
+document.querySelector(".dropdown-content").addEventListener('click', function(event) {
     event.stopPropagation();
 });
